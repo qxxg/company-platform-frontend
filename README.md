@@ -44,7 +44,11 @@ company-platform-web/
 ├── vite.config.js     开发代理与构建配置
 ├── .env.development   开发环境变量
 ├── .env.production    生产环境变量
-└── package.json       依赖与脚本（dev / build / preview）
+├── package.json       依赖与脚本（dev / build / preview）
+└── docs/
+    ├── 操作手册-分角色指南-v1.0.md   分角色图文操作手册
+    ├── screenshots/                  87 张按角色抓取的真实界面截图
+    └── diagrams/                     6 张架构与流程图（SVG）
 ```
 
 ### 0.4 部署启动流程
@@ -261,39 +265,45 @@ src/
                  roadmap/ 业务模块路线图
 ```
 
-## 9. 页面截图
+## 9. 分角色操作手册
 
-> 截图目录约定：`docs/screenshots/`，文件名 `<模块>-<页面>.png`。本仓库当前未提交截图二进制文件，下表给出「页面 — 路由 — 截图文件 — 截图说明」的完整对照；验收截图由运维在验收机生成后放入该目录，取消下方注释即可在 GitHub 上直接显示。
+**[《公司管理系统 V1.4 · 分角色操作手册》](docs/操作手册-分角色指南-v1.0.md)**
 
-<!-- 示例：登录页 -->
-<!-- <img src="docs/screenshots/web-login.png" alt="PC Web 登录页" width="900"> -->
+按**管理员 / 销售 / 厂长 / 操作员 / 财务**五个角色组织的图文操作指南，包含 87 张真实界面截图与 6 张架构流程图：
 
-| 页面 | 路由 | 截图文件 | 截图说明 |
-| --- | --- | --- | --- |
-| 登录页 | `/login` | `docs/screenshots/web-login.png` | 统一认证入口，跳转认证中心完成授权码 + PKCE 登录 |
-| 工作台 | `/dashboard` | `docs/screenshots/web-dashboard.png` | 顶部经营指标区：KPI 卡片、近 12 个月订单/收款趋势、本月订单状态环图、风险与待办、「待数据源」条；右上角「指标口径」弹出全量指标定义 |
-| 经营大屏 | `/cockpit` | `docs/screenshots/web-cockpit.png` | 16:9 暗色驾驶舱：标题栏（数据范围/最后同步时间/时钟）、6 个 KPI 卡、订单与收款趋势、设备状态环图、本月订单状态环图、工厂订单对比、风险预警列表；支持全屏与 5 分钟自动刷新 |
-| 客户列表 / 新建客户 | `/customers`、`/customers/create` | `docs/screenshots/web-customers.png` | 客户主数据列表与新建表单（来源、归属业务员必填，信用额度由后端收紧） |
-| 客户 360 | `/customers/:id` | `docs/screenshots/web-customer-360.png` | 客户档案、合同、应收、信用与订单一体视图，含「申请调整信用额度」入口 |
-| 信用看板 | `/finance/credit` | `docs/screenshots/web-credit.png` | 逐客户授信、已用、可用额度、最大逾期与风险标签（只读） |
-| 应收账款 | `/finance/receivables` | `docs/screenshots/web-receivables.png` | 账龄与逾期、筛选汇总（应收总额/未收余额/逾期金额）与登记应收 |
-| 收款核销 | `/finance/receipts` | `docs/screenshots/web-receipts.png` | 先登记到账再按未结应收分配，未核销余额作为预收待认领 |
-| 手工开票 | `/finance/invoices` | `docs/screenshots/web-invoices.png` | 票面信息登记与「已登记 → 已寄出 → 客户签收」跟踪 |
-| 客户对账 | `/finance/statements` | `docs/screenshots/web-statements.png` | 按客户与期间生成快照：期初、本期应收/收款/开票、期末 |
-| 合同管理 | `/finance/contracts` | `docs/screenshots/web-contracts.png` | 合同录入与「正式录入」状态流转，订单引用的前提 |
-| 费用报销 / 借款还款 | `/finance/expenses`、`/finance/loans` | `docs/screenshots/web-expenses.png` | 单据提交与审批状态；借款、还款登记 |
-| 订单列表 / 新建订单 | `/orders`、`/orders/create` | `docs/screenshots/web-orders.png` | 列表筛选与新建订单（客户、合同、工厂、材料、工艺、长度） |
-| 订单详情 | `/orders/:orderNo` | `docs/screenshots/web-order-detail.png` | 订单基本信息 + 生产工单区块（设备、队列位置、计划/实际时间、材料成本按权限展示） |
-| 设备台账 | `/equipment` | `docs/screenshots/web-equipment.png` | 设备档案、能力与位置、设备状态与状态日志 |
-| 排产队列 | `/production/schedule` | `docs/screenshots/web-schedule.png` | 按设备分组展示生产中与等待队列，支持建工单、开工、完成、取消 |
-| 维护工单 | `/production/maintenance` | `docs/screenshots/web-maintenance.png` | 发起维护、开始维护、完成登记成本与停机时长 |
-| 点检保养 | `/production/inspections` | `docs/screenshots/web-inspections.png` | 日/周/月点检登记，异常可一键生成「点检整改」工单 |
-| 插队申请 | `/production/jump-requests` | `docs/screenshots/web-jump-requests.png` | 只读插队记录，审批动作在审批中心完成 |
-| 设备数据上报 | `/production/device-reports` | `docs/screenshots/web-device-reports.png` | MQTT/CoAP/HTTP 上报数据、订单图片一条一单与未匹配暂存情况 |
-| 仓储管理 | `/warehouse` | `docs/screenshots/web-warehouse.png` | 仓库档案、物料档案、库存台账三个页签 |
-| 采购入库 / 跨厂调拨 / 工单领料 | `/warehouse/purchase-receipts`、`/warehouse/stock-transfers`、`/warehouse/material-issues` | `docs/screenshots/web-warehouse-docs.png` | 草稿→确认收货、先出库后入库、建单不扣库存确认发料才扣减 |
-| 审批中心 | `/approval` | `docs/screenshots/web-approval.png` | 「我的待办」「我的申请」两个页签，同意/驳回/撤销 |
-| 审批流程与档位 | `/approval/definitions` | `docs/screenshots/web-approval-definitions.png` | 业务类型金额档位配置（下限含、上限不含，财务维护） |
-| AI 助手 | `/assistant` | `docs/screenshots/web-assistant.png` | 只读问答与工具调用过程，审计写入 `ai_chat_log` |
-| 消息中心 | `/messages` | `docs/screenshots/web-messages.png` | 全部/仅未读、标记已读、跳转关联订单 |
-| 用户 / 工厂 / 权限 / 个人中心 | `/system/users`、`/system/factories`、`/system/permissions`、`/profile` | `docs/screenshots/web-system.png` | 系统与权限管理 |
+| 章节 | 内容 |
+| --- | --- |
+| 1. 开始使用 | 账号、登录、界面结构、鉴权原理、个人中心 |
+| 2. 权限与数据范围 | 角色权限矩阵、数据范围规则、越权表现 |
+| 3. 管理员 | 用户授权、工厂维护、审批兜底、BI 同步、页面速查图册 |
+| 4. 销售 | 建客户、建订单、插队申请、报销与借款 |
+| 5. 厂长 | 设备台账、排产队列、维护工单、点检保养、仓储 |
+| 6. 财务 | 合同录入、信用看板、应收收款、开票对账、放款还款 |
+| 7. 操作员 | 点检、领料出库、提交申请 |
+| 8. 部署与启动 | 环境要求、六步启动、端口速查、常见问题 |
+| 9. 附录 | 页面—权限—角色对照表、业务红线、截图索引 |
+
+## 10. 页面截图与图示
+
+截图由无头 Chrome（1920×1080）在真实运行环境按角色自动抓取，目录 `docs/screenshots/`，命名 `<角色>-<页面>.png`。
+
+| 角色 | 数量 | 覆盖范围 | 示例 |
+| --- | ---: | --- | --- |
+| 公共 | 2 | PC Web 登录页、认证中心登录页 | <img src="docs/screenshots/common-login.png" width="320" alt="PC Web 登录页"> |
+| 管理员 | 35 | 全部 35 个业务页面 | <img src="docs/screenshots/admin-dashboard.png" width="320" alt="管理员工作台"> |
+| 销售 | 20 | 客户 / 订单 / 排产 / 报销 + 2 张越权拦截 | <img src="docs/screenshots/sales-dashboard.png" width="320" alt="销售工作台"> |
+| 厂长 | 16 | 设备 / 排产 / 维保 / 仓储 / 审批 | <img src="docs/screenshots/manager-production-schedule.png" width="320" alt="排产队列"> |
+| 财务 | 16 | 合同 / 信用 / 应收收款 / 开票对账 / 审批 | <img src="docs/screenshots/finance-credit.png" width="320" alt="信用看板"> |
+
+架构与流程图（SVG，GitHub 原生渲染）位于 `docs/diagrams/`：
+
+| 图示 | 说明 |
+| --- | --- |
+| `architecture.svg` | 系统架构与数据流（用户层 → 接入层 → 业务层 → 数据层 → 集成层） |
+| `permission-matrix.svg` | 角色权限矩阵（5 角色 × 11 模块组） |
+| `data-scope.svg` | 数据范围规则（全局 / 工厂 / 本人） |
+| `login-flow.svg` | OAuth2 授权码 + PKCE 登录与鉴权流程 |
+| `deploy-flow.svg` | 部署与启动六步流程 |
+| `role-swimlane.svg` | 各角色日常动线泳道图 |
+
+> 完整的图文手册见 [《分角色操作手册》](docs/操作手册-分角色指南-v1.0.md)。

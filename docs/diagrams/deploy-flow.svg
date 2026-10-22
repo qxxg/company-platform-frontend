@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 560" width="1180" height="560" role="img" aria-label="部署与启动流程（内网单机开发/联调环境）">
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/></marker>
+  <marker id="arT" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0f766e"/></marker>
+  <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#10b981"/></linearGradient>
+</defs>
+<rect x="0" y="0" width="1180" height="560" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1180" height="46" rx="0" fill="url(#g1)" stroke="none" stroke-width="1"/>
+<text x="20" y="30" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#ffffff" text-anchor="start" >部署与启动流程（内网单机开发/联调环境）</text>
+
+<rect x="24" y="76" width="176" height="120" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<rect x="24" y="76" width="176" height="26" rx="8" fill="#0f766e" stroke="none" stroke-width="1"/>
+<rect x="24" y="94" width="176" height="8" rx="0" fill="#0f766e" stroke="none" stroke-width="1"/>
+<text x="112" y="94" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="700" fill="#fff" text-anchor="middle" >1. 准备中间件</text>
+<text x="36" y="124" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="start" >Ubuntu 主机</text>
+<text x="36" y="140" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="start" >MySQL 3306/3307 · Nacos 8848</text>
+<text x="36" y="156" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="start" >EMQX · IoTDB · Redis</text>
+<line x1="202" y1="136" x2="212" y2="136" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#arT)"/>
+<rect x="214" y="76" width="176" height="120" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<rect x="214" y="76" width="176" height="26" rx="8" fill="#0f766e" stroke="none" stroke-width="1"/>
+<rect x="214" y="94" width="176" height="8" rx="0" fill="#0f766e" stroke="none" stroke-width="1"/>
+<text x="302" y="94" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="700" fill="#fff" text-anchor="middle" >2. 初始化数据库</text>
+<text x="226" y="124" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="start" >按 01→18 顺序执行 sql/</text>
+<text x="226" y="140" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="start" >company_platform / order0 / order1 / bi</text>
+<line x1="392" y1="136" x2="402" y2="136" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#arT)"/>
+<rect x="404" y="76" width="176" height="120" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<rect x="404" y="76" width="176" height="26" rx="8" fill="#0f766e" stroke="none" stroke-width="1"/>
+<rect x="404" y="94" width="176" height="8" rx="0" fill="#0f766e" stroke="none" stroke-width="1"/>
+<text x="492" y="94" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="700" fill="#fff" text-anchor="middle" >3. 构建后端</text>
+<text x="416" y="124" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="start" >scripts/dev/build.ps1</text>
+<text x="416" y="140" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="start" >产出各模块 target/*.jar</text>
+<line x1="582" y1="136" x2="592" y2="136" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#arT)"/>
+<rect x="594" y="76" width="176" height="120" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<rect x="594" y="76" width="176" height="26" rx="8" fill="#0f766e" stroke="none" stroke-width="1"/>
+<rect x="594" y="94" width="176" height="8" rx="0" fill="#0f766e" stroke="none" stroke-width="1"/>
+<text x="682" y="94" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="700" fill="#fff" text-anchor="middle" >4. 启动全部服务</text>
+<text x="606" y="124" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="start" >scripts/dev/start-all.ps1</text>
+<text x="606" y="140" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="start" >注册 Nacos，网关 8080 就绪</text>
+<line x1="772" y1="136" x2="782" y2="136" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#arT)"/>
+<rect x="784" y="76" width="176" height="120" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<rect x="784" y="76" width="176" height="26" rx="8" fill="#0f766e" stroke="none" stroke-width="1"/>
+<rect x="784" y="94" width="176" height="8" rx="0" fill="#0f766e" stroke="none" stroke-width="1"/>
+<text x="872" y="94" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="700" fill="#fff" text-anchor="middle" >5. 启动 PC Web</text>
+<text x="796" y="124" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="start" >scripts/dev/start-web.ps1</text>
+<text x="796" y="140" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="start" >或前端仓库 npm run dev</text>
+<line x1="962" y1="136" x2="972" y2="136" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#arT)"/>
+<rect x="974" y="76" width="176" height="120" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<rect x="974" y="76" width="176" height="26" rx="8" fill="#0f766e" stroke="none" stroke-width="1"/>
+<rect x="974" y="94" width="176" height="8" rx="0" fill="#0f766e" stroke="none" stroke-width="1"/>
+<text x="1062" y="94" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="700" fill="#fff" text-anchor="middle" >6. 冒烟验收</text>
+<text x="986" y="124" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="start" >scripts/dev/smoke-test.ps1</text>
+<text x="986" y="140" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="start" >校验接口、权限与数据链路</text>
+<rect x="24" y="222" width="560" height="316" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="44" y="250" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="14" font-weight="700" fill="#0f766e" text-anchor="start" >关键命令</text>
+<rect x="44" y="262" width="520" height="24" rx="4" fill="#0f172a" stroke="none" stroke-width="1"/>
+<text x="54" y="278" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#7dd3fc" text-anchor="start" >powershell -ExecutionPolicy Bypass -File scripts/dev/build.ps1</text>
+<rect x="44" y="292" width="520" height="24" rx="4" fill="#0f172a" stroke="none" stroke-width="1"/>
+<text x="54" y="308" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#7dd3fc" text-anchor="start" >powershell -ExecutionPolicy Bypass -File scripts/dev/start-all.ps1</text>
+<rect x="44" y="322" width="520" height="24" rx="4" fill="#0f172a" stroke="none" stroke-width="1"/>
+<text x="54" y="338" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#7dd3fc" text-anchor="start" >powershell -ExecutionPolicy Bypass -File scripts/dev/status.ps1</text>
+<rect x="44" y="352" width="520" height="24" rx="4" fill="#0f172a" stroke="none" stroke-width="1"/>
+<text x="54" y="368" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#7dd3fc" text-anchor="start" >powershell -ExecutionPolicy Bypass -File scripts/dev/start-web.ps1 -Install</text>
+<rect x="44" y="382" width="520" height="24" rx="4" fill="#0f172a" stroke="none" stroke-width="1"/>
+<text x="54" y="398" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#7dd3fc" text-anchor="start" >powershell -ExecutionPolicy Bypass -File scripts/dev/smoke-test.ps1</text>
+<rect x="44" y="412" width="520" height="24" rx="4" fill="#0f172a" stroke="none" stroke-width="1"/>
+<text x="54" y="428" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#7dd3fc" text-anchor="start" >powershell -ExecutionPolicy Bypass -File scripts/dev/stop-all.ps1</text>
+<text x="44" y="476" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="400" fill="#6b7280" text-anchor="start" >前端是独立仓库，放在后端同级目录 company-platform-web；start-web.ps1 会自动定位。</text>
+<text x="44" y="496" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="400" fill="#6b7280" text-anchor="start" >服务全部注册到 Nacos 后，访问 http://你的IP地址:5173 即可使用。</text>
+<text x="44" y="520" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="400" fill="#6b7280" text-anchor="start" >端口：9000 认证 / 9101 系统 / 9102 订单 / 9103 客户 / 9104 审批 / 9105 BI / 9106 AI</text>
+<rect x="604" y="222" width="552" height="316" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="624" y="250" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="14" font-weight="700" fill="#0f766e" text-anchor="start" >端口与访问地址</text>
+<text x="624" y="282" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12" font-weight="600" fill="#1f2937" text-anchor="start" >PC Web</text>
+<text x="760" y="282" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#0f766e" text-anchor="start" >5173</text>
+<text x="870" y="282" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#6b7280" text-anchor="start" >浏览器访问入口（生产由 Nginx 托管）</text>
+<text x="624" y="322" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12" font-weight="600" fill="#1f2937" text-anchor="start" >网关</text>
+<text x="760" y="322" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#0f766e" text-anchor="start" >8080</text>
+<text x="870" y="322" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#6b7280" text-anchor="start" >前端所有 /api/** 请求入口</text>
+<text x="624" y="362" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12" font-weight="600" fill="#1f2937" text-anchor="start" >认证中心</text>
+<text x="760" y="362" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#0f766e" text-anchor="start" >9000</text>
+<text x="870" y="362" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#6b7280" text-anchor="start" >登录页与令牌端点</text>
+<text x="624" y="402" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12" font-weight="600" fill="#1f2937" text-anchor="start" >Nacos 控制台</text>
+<text x="760" y="402" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#0f766e" text-anchor="start" >8080</text>
+<text x="870" y="402" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#6b7280" text-anchor="start" >你的IP地址:8080/nacos</text>
+<text x="624" y="442" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12" font-weight="600" fill="#1f2937" text-anchor="start" >BI / AI</text>
+<text x="760" y="442" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#0f766e" text-anchor="start" >9105 / 9106</text>
+<text x="870" y="442" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#6b7280" text-anchor="start" >大屏聚合与只读助手</text>
+<text x="624" y="482" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12" font-weight="600" fill="#1f2937" text-anchor="start" >中间件</text>
+<text x="760" y="482" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#0f766e" text-anchor="start" >3306/3307/8848/1883</text>
+<text x="870" y="482" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#6b7280" text-anchor="start" >MySQL / Nacos / EMQX</text>
+<rect x="624" y="500" width="512" height="24" rx="4" fill="#eef6f4" stroke="#10b981" stroke-width="1"/>
+<text x="636" y="516" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#0f766e" text-anchor="start" >生产部署前：更换默认密码与 JWT 签名密钥、收敛 CORS、启用 HTTPS。</text>
+</svg>

@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 560" width="1180" height="560" role="img" aria-label="各角色日常动线（一天中最常做的几件事）">
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/></marker>
+  <marker id="arT" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0f766e"/></marker>
+  <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#10b981"/></linearGradient>
+</defs>
+<rect x="0" y="0" width="1180" height="560" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1180" height="46" rx="0" fill="url(#g1)" stroke="none" stroke-width="1"/>
+<text x="20" y="30" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#ffffff" text-anchor="start" >各角色日常动线（一天中最常做的几件事）</text>
+
+<rect x="24" y="66" width="180" height="104" rx="8" fill="#2563eb" stroke="none" stroke-width="1"/>
+<text x="114" y="112" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="14" font-weight="700" fill="#fff" text-anchor="middle" >销售</text>
+<text x="114" y="132" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#e2e8f0" text-anchor="middle" >SALES</text>
+<rect x="222" y="82" width="152" height="72" rx="6" fill="#ffffff" stroke="#2563eb" stroke-width="1"/>
+<text x="298" y="110" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >登录后看工作台 KPI</text>
+<line x1="375" y1="118" x2="385" y2="118" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#ar)"/>
+<rect x="386" y="82" width="152" height="72" rx="6" fill="#ffffff" stroke="#2563eb" stroke-width="1"/>
+<text x="462" y="110" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >新建/维护自己的客户</text>
+<line x1="539" y1="118" x2="549" y2="118" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#ar)"/>
+<rect x="550" y="82" width="152" height="72" rx="6" fill="#ffffff" stroke="#2563eb" stroke-width="1"/>
+<text x="626" y="110" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >选客户+合同建订单</text>
+<line x1="703" y1="118" x2="713" y2="118" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#ar)"/>
+<rect x="714" y="82" width="152" height="72" rx="6" fill="#ffffff" stroke="#2563eb" stroke-width="1"/>
+<text x="790" y="110" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >跟进排产队列，必要时申</text>
+<text x="790" y="125" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >请插队</text>
+<line x1="867" y1="118" x2="877" y2="118" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#ar)"/>
+<rect x="878" y="82" width="152" height="72" rx="6" fill="#ffffff" stroke="#2563eb" stroke-width="1"/>
+<text x="954" y="110" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >提交费用报销/借款</text>
+<line x1="1031" y1="118" x2="1041" y2="118" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#ar)"/>
+<rect x="1042" y="82" width="152" height="72" rx="6" fill="#ffffff" stroke="#2563eb" stroke-width="1"/>
+<text x="1118" y="110" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >在审批中心看我的申请</text>
+<rect x="24" y="184" width="180" height="104" rx="8" fill="#d97706" stroke="none" stroke-width="1"/>
+<text x="114" y="230" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="14" font-weight="700" fill="#fff" text-anchor="middle" >厂长</text>
+<text x="114" y="250" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#e2e8f0" text-anchor="middle" >FACTORY_MANAGER</text>
+<rect x="222" y="200" width="152" height="72" rx="6" fill="#ffffff" stroke="#d97706" stroke-width="1"/>
+<text x="298" y="228" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >经营大屏看本厂订单与设</text>
+<text x="298" y="243" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >备状态</text>
+<line x1="375" y1="236" x2="385" y2="236" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#ar)"/>
+<rect x="386" y="200" width="152" height="72" rx="6" fill="#ffffff" stroke="#d97706" stroke-width="1"/>
+<text x="462" y="228" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >维护设备档案与状态</text>
+<line x1="539" y1="236" x2="549" y2="236" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#ar)"/>
+<rect x="550" y="200" width="152" height="72" rx="6" fill="#ffffff" stroke="#d97706" stroke-width="1"/>
+<text x="626" y="228" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >排产队列开工单/开工/</text>
+<text x="626" y="243" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >完成</text>
+<line x1="703" y1="236" x2="713" y2="236" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#ar)"/>
+<rect x="714" y="200" width="152" height="72" rx="6" fill="#ffffff" stroke="#d97706" stroke-width="1"/>
+<text x="790" y="228" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >处理插队审批与维护工单</text>
+<line x1="867" y1="236" x2="877" y2="236" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#ar)"/>
+<rect x="878" y="200" width="152" height="72" rx="6" fill="#ffffff" stroke="#d97706" stroke-width="1"/>
+<text x="954" y="228" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >登记点检保养</text>
+<line x1="1031" y1="236" x2="1041" y2="236" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#ar)"/>
+<rect x="1042" y="200" width="152" height="72" rx="6" fill="#ffffff" stroke="#d97706" stroke-width="1"/>
+<text x="1118" y="228" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >出入库与工单领料</text>
+<rect x="24" y="302" width="180" height="104" rx="8" fill="#7c3aed" stroke="none" stroke-width="1"/>
+<text x="114" y="348" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="14" font-weight="700" fill="#fff" text-anchor="middle" >财务</text>
+<text x="114" y="368" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#e2e8f0" text-anchor="middle" >FINANCE</text>
+<rect x="222" y="318" width="152" height="72" rx="6" fill="#ffffff" stroke="#7c3aed" stroke-width="1"/>
+<text x="298" y="346" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >录入合同并「正式录入」</text>
+<line x1="375" y1="354" x2="385" y2="354" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#ar)"/>
+<rect x="386" y="318" width="152" height="72" rx="6" fill="#ffffff" stroke="#7c3aed" stroke-width="1"/>
+<text x="462" y="346" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >信用看板看额度占用与逾</text>
+<text x="462" y="361" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >期</text>
+<line x1="539" y1="354" x2="549" y2="354" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#ar)"/>
+<rect x="550" y="318" width="152" height="72" rx="6" fill="#ffffff" stroke="#7c3aed" stroke-width="1"/>
+<text x="626" y="346" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >登记应收与收款核销</text>
+<line x1="703" y1="354" x2="713" y2="354" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#ar)"/>
+<rect x="714" y="318" width="152" height="72" rx="6" fill="#ffffff" stroke="#7c3aed" stroke-width="1"/>
+<text x="790" y="346" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >手工开票、对账单</text>
+<line x1="867" y1="354" x2="877" y2="354" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#ar)"/>
+<rect x="878" y="318" width="152" height="72" rx="6" fill="#ffffff" stroke="#7c3aed" stroke-width="1"/>
+<text x="954" y="346" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >审批报销/借款并放款还</text>
+<text x="954" y="361" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >款</text>
+<line x1="1031" y1="354" x2="1041" y2="354" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#ar)"/>
+<rect x="1042" y="318" width="152" height="72" rx="6" fill="#ffffff" stroke="#7c3aed" stroke-width="1"/>
+<text x="1118" y="346" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >大屏看本月经营指标</text>
+<rect x="24" y="420" width="180" height="104" rx="8" fill="#0f766e" stroke="none" stroke-width="1"/>
+<text x="114" y="466" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="14" font-weight="700" fill="#fff" text-anchor="middle" >管理员</text>
+<text x="114" y="486" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#e2e8f0" text-anchor="middle" >ADMIN</text>
+<rect x="222" y="436" width="152" height="72" rx="6" fill="#ffffff" stroke="#0f766e" stroke-width="1"/>
+<text x="298" y="464" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >工作台与经营大屏巡检</text>
+<line x1="375" y1="472" x2="385" y2="472" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#ar)"/>
+<rect x="386" y="436" width="152" height="72" rx="6" fill="#ffffff" stroke="#0f766e" stroke-width="1"/>
+<text x="462" y="464" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >用户账号与角色授权</text>
+<line x1="539" y1="472" x2="549" y2="472" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#ar)"/>
+<rect x="550" y="436" width="152" height="72" rx="6" fill="#ffffff" stroke="#0f766e" stroke-width="1"/>
+<text x="626" y="464" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >工厂组织维护</text>
+<line x1="703" y1="472" x2="713" y2="472" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#ar)"/>
+<rect x="714" y="436" width="152" height="72" rx="6" fill="#ffffff" stroke="#0f766e" stroke-width="1"/>
+<text x="790" y="464" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >审批中心兜底处理</text>
+<line x1="867" y1="472" x2="877" y2="472" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#ar)"/>
+<rect x="878" y="436" width="152" height="72" rx="6" fill="#ffffff" stroke="#0f766e" stroke-width="1"/>
+<text x="954" y="464" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >触发 BI 数据同步</text>
+<line x1="1031" y1="472" x2="1041" y2="472" stroke="#94a3b8" stroke-width="1.5"  marker-end="url(#ar)"/>
+<rect x="1042" y="436" width="152" height="72" rx="6" fill="#ffffff" stroke="#0f766e" stroke-width="1"/>
+<text x="1118" y="464" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle" >运维排障与日志查看</text>
+<rect x="24" y="544" width="1132" height="56" rx="8" fill="#eef6f4" stroke="#10b981" stroke-width="1"/>
+<text x="44" y="568" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12.5" font-weight="400" fill="#1f2937" text-anchor="start" >四个角色的动线互不重叠：销售管「单」，厂长管「产」，财务管「钱」，管理员管「人 + 数」，审批中心把三类动作串成闭环。</text>
+<text x="44" y="588" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12" font-weight="400" fill="#1f2937" text-anchor="start" >所有写操作都会进入审批中心（信用额度调整、队列插队、费用报销、借款），审批通过后才真正落地。</text>
+</svg>

@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 546" width="1180" height="546" role="img" aria-label="角色权限矩阵（以种子账号授权为准）">
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/></marker>
+  <marker id="arT" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0f766e"/></marker>
+  <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#10b981"/></linearGradient>
+</defs>
+<rect x="0" y="0" width="1180" height="546" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1180" height="46" rx="0" fill="url(#g1)" stroke="none" stroke-width="1"/>
+<text x="20" y="30" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#ffffff" text-anchor="start" >角色权限矩阵（以种子账号授权为准）</text>
+
+<rect x="171" y="62" width="82.36363636363636" height="50" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="212.1818181818182" y="80" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#1f2937" text-anchor="middle" >工作台</text>
+<text x="212.1818181818182" y="95" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#1f2937" text-anchor="middle" >大屏</text>
+<rect x="259.3636363636364" y="62" width="82.36363636363636" height="50" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="300.54545454545456" y="80" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#1f2937" text-anchor="middle" >客户</text>
+<text x="300.54545454545456" y="95" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#1f2937" text-anchor="middle" >档案</text>
+<rect x="347.72727272727275" y="62" width="82.36363636363636" height="50" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="388.90909090909093" y="80" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#1f2937" text-anchor="middle" >合同</text>
+<text x="388.90909090909093" y="95" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#1f2937" text-anchor="middle" >信用</text>
+<rect x="436.09090909090907" y="62" width="82.36363636363636" height="50" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="477.27272727272725" y="80" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#1f2937" text-anchor="middle" >应收收款</text>
+<text x="477.27272727272725" y="95" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#1f2937" text-anchor="middle" >开票对账</text>
+<rect x="524.4545454545455" y="62" width="82.36363636363636" height="50" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="565.6363636363636" y="80" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#1f2937" text-anchor="middle" >费用报销</text>
+<text x="565.6363636363636" y="95" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#1f2937" text-anchor="middle" >借款还款</text>
+<rect x="612.8181818181818" y="62" width="82.36363636363636" height="50" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="653.9999999999999" y="80" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#1f2937" text-anchor="middle" >订单</text>
+<text x="653.9999999999999" y="95" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#1f2937" text-anchor="middle" >排产</text>
+<rect x="701.1818181818181" y="62" width="82.36363636363636" height="50" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="742.3636363636363" y="80" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#1f2937" text-anchor="middle" >设备</text>
+<text x="742.3636363636363" y="95" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#1f2937" text-anchor="middle" >点检</text>
+<rect x="789.5454545454545" y="62" width="82.36363636363636" height="50" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="830.7272727272726" y="80" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#1f2937" text-anchor="middle" >仓储</text>
+<text x="830.7272727272726" y="95" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#1f2937" text-anchor="middle" >出入库</text>
+<rect x="877.9090909090909" y="62" width="82.36363636363636" height="50" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="919.090909090909" y="80" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#1f2937" text-anchor="middle" >审批</text>
+<text x="919.090909090909" y="95" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#1f2937" text-anchor="middle" >中心</text>
+<rect x="966.2727272727273" y="62" width="82.36363636363636" height="50" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="1007.4545454545454" y="80" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#1f2937" text-anchor="middle" >系统</text>
+<text x="1007.4545454545454" y="95" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#1f2937" text-anchor="middle" >管理</text>
+<rect x="1054.6363636363635" y="62" width="82.36363636363636" height="50" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="1095.8181818181818" y="80" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#1f2937" text-anchor="middle" >AI</text>
+<text x="1095.8181818181818" y="95" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="11.5" font-weight="600" fill="#1f2937" text-anchor="middle" >助手</text>
+<rect x="16" y="124" width="144" height="50" rx="8" fill="#0f766e" stroke="none" stroke-width="1"/>
+<text x="76" y="144" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle" >管理员</text>
+<text x="76" y="160" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle" >ADMIN</text>
+<rect x="171" y="124" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="212.1818181818182" y="158" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="259.3636363636364" y="124" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="300.54545454545456" y="158" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="347.72727272727275" y="124" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="388.90909090909093" y="158" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="436.09090909090907" y="124" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="477.27272727272725" y="158" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="524.4545454545455" y="124" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="565.6363636363636" y="158" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="612.8181818181818" y="124" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="653.9999999999999" y="158" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="701.1818181818181" y="124" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="742.3636363636363" y="158" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="789.5454545454545" y="124" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="830.7272727272726" y="158" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="877.9090909090909" y="124" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="919.090909090909" y="158" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="966.2727272727273" y="124" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="1007.4545454545454" y="158" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="1054.6363636363635" y="124" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="1095.8181818181818" y="158" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="16" y="186" width="144" height="50" rx="8" fill="#2563eb" stroke="none" stroke-width="1"/>
+<text x="76" y="206" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle" >销售</text>
+<text x="76" y="222" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle" >SALES</text>
+<rect x="171" y="186" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="212.1818181818182" y="220" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#d97706" text-anchor="middle" >◐</text>
+<rect x="259.3636363636364" y="186" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="300.54545454545456" y="220" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="347.72727272727275" y="186" width="82.36363636363636" height="50" rx="8" fill="#fafafa" stroke="#d0d7de" stroke-width="1"/>
+<text x="388.90909090909093" y="220" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#cbd5e1" text-anchor="middle" >—</text>
+<rect x="436.09090909090907" y="186" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="477.27272727272725" y="220" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#64748b" text-anchor="middle" >○</text>
+<rect x="524.4545454545455" y="186" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="565.6363636363636" y="220" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#d97706" text-anchor="middle" >◐</text>
+<rect x="612.8181818181818" y="186" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="653.9999999999999" y="220" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#d97706" text-anchor="middle" >◐</text>
+<rect x="701.1818181818181" y="186" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="742.3636363636363" y="220" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#64748b" text-anchor="middle" >○</text>
+<rect x="789.5454545454545" y="186" width="82.36363636363636" height="50" rx="8" fill="#fafafa" stroke="#d0d7de" stroke-width="1"/>
+<text x="830.7272727272726" y="220" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#cbd5e1" text-anchor="middle" >—</text>
+<rect x="877.9090909090909" y="186" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="919.090909090909" y="220" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#d97706" text-anchor="middle" >◐</text>
+<rect x="966.2727272727273" y="186" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="1007.4545454545454" y="220" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#64748b" text-anchor="middle" >○</text>
+<rect x="1054.6363636363635" y="186" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="1095.8181818181818" y="220" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="16" y="248" width="144" height="50" rx="8" fill="#d97706" stroke="none" stroke-width="1"/>
+<text x="76" y="268" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle" >厂长</text>
+<text x="76" y="284" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle" >FACTORY_MGR</text>
+<rect x="171" y="248" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="212.1818181818182" y="282" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="259.3636363636364" y="248" width="82.36363636363636" height="50" rx="8" fill="#fafafa" stroke="#d0d7de" stroke-width="1"/>
+<text x="300.54545454545456" y="282" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#cbd5e1" text-anchor="middle" >—</text>
+<rect x="347.72727272727275" y="248" width="82.36363636363636" height="50" rx="8" fill="#fafafa" stroke="#d0d7de" stroke-width="1"/>
+<text x="388.90909090909093" y="282" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#cbd5e1" text-anchor="middle" >—</text>
+<rect x="436.09090909090907" y="248" width="82.36363636363636" height="50" rx="8" fill="#fafafa" stroke="#d0d7de" stroke-width="1"/>
+<text x="477.27272727272725" y="282" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#cbd5e1" text-anchor="middle" >—</text>
+<rect x="524.4545454545455" y="248" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="565.6363636363636" y="282" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#d97706" text-anchor="middle" >◐</text>
+<rect x="612.8181818181818" y="248" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="653.9999999999999" y="282" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#d97706" text-anchor="middle" >◐</text>
+<rect x="701.1818181818181" y="248" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="742.3636363636363" y="282" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="789.5454545454545" y="248" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="830.7272727272726" y="282" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="877.9090909090909" y="248" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="919.090909090909" y="282" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="966.2727272727273" y="248" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="1007.4545454545454" y="282" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#64748b" text-anchor="middle" >○</text>
+<rect x="1054.6363636363635" y="248" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="1095.8181818181818" y="282" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="16" y="310" width="144" height="50" rx="8" fill="#0891b2" stroke="none" stroke-width="1"/>
+<text x="76" y="330" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle" >操作员</text>
+<text x="76" y="346" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle" >OPERATOR</text>
+<rect x="171" y="310" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="212.1818181818182" y="344" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#d97706" text-anchor="middle" >◐</text>
+<rect x="259.3636363636364" y="310" width="82.36363636363636" height="50" rx="8" fill="#fafafa" stroke="#d0d7de" stroke-width="1"/>
+<text x="300.54545454545456" y="344" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#cbd5e1" text-anchor="middle" >—</text>
+<rect x="347.72727272727275" y="310" width="82.36363636363636" height="50" rx="8" fill="#fafafa" stroke="#d0d7de" stroke-width="1"/>
+<text x="388.90909090909093" y="344" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#cbd5e1" text-anchor="middle" >—</text>
+<rect x="436.09090909090907" y="310" width="82.36363636363636" height="50" rx="8" fill="#fafafa" stroke="#d0d7de" stroke-width="1"/>
+<text x="477.27272727272725" y="344" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#cbd5e1" text-anchor="middle" >—</text>
+<rect x="524.4545454545455" y="310" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="565.6363636363636" y="344" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#d97706" text-anchor="middle" >◐</text>
+<rect x="612.8181818181818" y="310" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="653.9999999999999" y="344" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#64748b" text-anchor="middle" >○</text>
+<rect x="701.1818181818181" y="310" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="742.3636363636363" y="344" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#d97706" text-anchor="middle" >◐</text>
+<rect x="789.5454545454545" y="310" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="830.7272727272726" y="344" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#d97706" text-anchor="middle" >◐</text>
+<rect x="877.9090909090909" y="310" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="919.090909090909" y="344" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#d97706" text-anchor="middle" >◐</text>
+<rect x="966.2727272727273" y="310" width="82.36363636363636" height="50" rx="8" fill="#fafafa" stroke="#d0d7de" stroke-width="1"/>
+<text x="1007.4545454545454" y="344" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#cbd5e1" text-anchor="middle" >—</text>
+<rect x="1054.6363636363635" y="310" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="1095.8181818181818" y="344" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="16" y="372" width="144" height="50" rx="8" fill="#7c3aed" stroke="none" stroke-width="1"/>
+<text x="76" y="392" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle" >财务</text>
+<text x="76" y="408" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle" >FINANCE</text>
+<rect x="171" y="372" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="212.1818181818182" y="406" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="259.3636363636364" y="372" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="300.54545454545456" y="406" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#64748b" text-anchor="middle" >○</text>
+<rect x="347.72727272727275" y="372" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="388.90909090909093" y="406" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="436.09090909090907" y="372" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="477.27272727272725" y="406" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="524.4545454545455" y="372" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="565.6363636363636" y="406" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="612.8181818181818" y="372" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="653.9999999999999" y="406" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#64748b" text-anchor="middle" >○</text>
+<rect x="701.1818181818181" y="372" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="742.3636363636363" y="406" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#64748b" text-anchor="middle" >○</text>
+<rect x="789.5454545454545" y="372" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="830.7272727272726" y="406" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#64748b" text-anchor="middle" >○</text>
+<rect x="877.9090909090909" y="372" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="919.090909090909" y="406" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="966.2727272727273" y="372" width="82.36363636363636" height="50" rx="8" fill="#fafafa" stroke="#d0d7de" stroke-width="1"/>
+<text x="1007.4545454545454" y="406" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#cbd5e1" text-anchor="middle" >—</text>
+<rect x="1054.6363636363635" y="372" width="82.36363636363636" height="50" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="1095.8181818181818" y="406" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="19" font-weight="700" fill="#0f766e" text-anchor="middle" >●</text>
+<rect x="16" y="452" width="1148" height="78" rx="8" fill="#eef6f4" stroke="#10b981" stroke-width="1"/>
+<text x="36" y="478" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="16" font-weight="700" fill="#0f766e" text-anchor="start" >●</text>
+<text x="58" y="478" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12" font-weight="400" fill="#1f2937" text-anchor="start" >全部操作</text>
+<text x="154" y="478" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="16" font-weight="700" fill="#d97706" text-anchor="start" >◐</text>
+<text x="176" y="478" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12" font-weight="400" fill="#1f2937" text-anchor="start" >部分操作</text>
+<text x="272" y="478" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="16" font-weight="700" fill="#64748b" text-anchor="start" >○</text>
+<text x="294" y="478" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12" font-weight="400" fill="#1f2937" text-anchor="start" >只读</text>
+<text x="390" y="478" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="16" font-weight="700" fill="#cbd5e1" text-anchor="start" >—</text>
+<text x="412" y="478" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12" font-weight="400" fill="#1f2937" text-anchor="start" >无权限</text>
+<text x="36" y="506" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12" font-weight="400" fill="#1f2937" text-anchor="start" >说明：隐藏菜单只是体验优化，服务端每个接口仍以 @PreAuthorize 独立校验；越权访问会返回 403 并提示缺失的权限码。</text>
+<text x="36" y="522" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif" font-size="12" font-weight="400" fill="#1f2937" text-anchor="start" >OPERATOR（操作员）当前为角色定义态，种子数据未创建对应账号，需要时由管理员在「用户账号」页创建。</text>
+</svg>
