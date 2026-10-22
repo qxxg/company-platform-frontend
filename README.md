@@ -1,5 +1,7 @@
 # company-platform-frontend
 
+![Vue](https://img.shields.io/badge/Vue-3.5-42b883?style=flat-square) ![Vite](https://img.shields.io/badge/Vite-7-646cff?style=flat-square) ![Element Plus](https://img.shields.io/badge/Element%20Plus-2.14-409eff?style=flat-square) ![Pinia](https://img.shields.io/badge/Pinia-2.x-yellowgreen?style=flat-square) ![Vue Router](https://img.shields.io/badge/Vue%20Router-4-42b883?style=flat-square) ![Axios](https://img.shields.io/badge/Axios-1.x-5a5a5a?style=flat-square) ![ECharts](https://img.shields.io/badge/ECharts-6-pink?style=flat-square) ![Node](https://img.shields.io/badge/Node-24-5FA04E?style=flat-square)
+
 公司管理系统 PC Web 前端（独立仓库）。技术栈为 Vue 3、Vite 7、Element Plus、Pinia、Vue Router、Axios 和 ECharts 6，使用 OAuth2 授权码 + PKCE 登录认证中心，通过网关访问后端接口。
 
 > 后端是独立仓库 `company-platform-backend`（目录 `company-platform`）。本仓库不依赖后端源码，只通过网关 `/api/**` 调用接口；克隆后请把两个仓库放在同一目录下：
@@ -9,6 +11,45 @@
 >   company-platform/        # 后端 company-platform-backend
 >   company-platform-web/    # 前端 company-platform-frontend（本仓库）
 > ```
+
+## 0. 项目概览
+
+> 本仓库是公司管理系统 PC Web 的前后端分离后的独立前端仓库（`company-platform-frontend`，本地目录 `company-platform-web`）。后端独立仓库为 `company-platform-backend`（本地目录 `company-platform`），二者通过网关 `/api/**` 交互；前端不依赖后端源码。
+
+### 0.1 功能
+
+本阶段已接入真实接口的功能模块：统一认证（OAuth2 授权码 + PKCE）、登录守卫、工作台、经营指标区与经营大屏、客户列表/新建/360、合同管理、信用看板、应收账款、收款核销、手工开票、客户对账、费用报销、借款与还款、订单列表/新建/详情、设备台账、排产队列、维护工单、点检保养、插队申请、仓储管理、采购入库、跨厂调拨、工单领料、审批中心、消息中心、AI 助手、用户/工厂/权限、个人中心、业务模块路线图。经营指标全部来自 `platform-bi` 的只读聚合接口。
+
+### 0.2 技术架构
+
+Vue 3.5 + Vite 7 + Element Plus 2.14 + Pinia + Vue Router + Axios + ECharts 6；OAuth2 授权码 + PKCE；Vite 开发代理到网关；生产构建经 Nginx 反代 `/api/`。
+
+### 0.3 项目结构
+
+目录结构以 `src/` 为根，目录职责见下方「8. 目录结构」章节：
+
+```text
+company-platform-web/
+├── src/
+│   ├── api/           Axios 实例与各业务域接口（客户/财务/订单/生产/仓储/审批/AI/消息/系统/BI）
+│   ├── components/    通用布局、状态、空态、图表容器组件
+│   ├── constants/     业务枚举、路线图、角色名称
+│   ├── layouts/       主布局（含消息铃铛与轮询）
+│   ├── router/        路由、权限元数据、登录守卫
+│   ├── stores/        Pinia 认证会话
+│   ├── styles/        设计变量与全局样式
+│   ├── utils/         OAuth、JWT、金额、格式化、错误处理
+│   └── views/         页面（按业务域分目录）
+├── index.html         Vite 入口模板
+├── vite.config.js     开发代理与构建配置
+├── .env.development   开发环境变量
+├── .env.production    生产环境变量
+└── package.json       依赖与脚本（dev / build / preview）
+```
+
+### 0.4 部署启动流程
+
+本地启动、环境变量、OAuth2 登录流程、页面权限、页面说明、生产构建与部署流程，均见下方对应章节。
 
 ## 1. 本地启动
 
@@ -50,11 +91,11 @@ Vite 只暴露以 `VITE_` 开头的变量。开发环境读取 `.env.development
 | `VITE_OAUTH_CLIENT_ID` | `pc-web` | OAuth2 公共客户端 ID |
 | `VITE_OAUTH_REDIRECT_URI` | 空 | 回调地址；为空时使用当前页面 origin 加固定回调路径 |
 
-使用内网 IP 访问时，例如 `http://192.168.3.43:5173`，认证中心地址会自动推导为 `http://192.168.3.43:9000`。因此必须同时满足：
+使用内网 IP 访问时，例如 `http://你的IP地址:5173`，认证中心地址会自动推导为 `http://你的IP地址:9000`。因此必须同时满足：
 
 1. 认证中心的 `AUTH_ISSUER` 与浏览器访问认证中心的地址一致；
 2. 认证中心允许该 Origin 跨域访问令牌端点；
-3. `pc-web` 已注册 `http://192.168.3.43:5173/login/oauth2/code/pc-web` 作为回调地址。
+3. `pc-web` 已注册 `http://你的IP地址:5173/login/oauth2/code/pc-web` 作为回调地址。
 
 ## 3. OAuth2 / PKCE 登录流程
 
@@ -202,13 +243,57 @@ server {
 
 ```text
 src/
-  api/           Axios 实例和客户/合同/订单/设备排产/系统/消息/BI 接口
-  components/    通用布局、状态、空态、ECharts 容器组件
+  api/           Axios 实例与业务域接口
+                 http.js 实例与拦截器、customer.js 客户与合同、finance.js 财务、order.js 订单、
+                 production.js 设备与排产、warehouse.js 仓储、approval.js 审批、ai.js AI 助手、
+                 bi.js 经营指标、message.js 消息、system.js 系统
+  components/    AppSidebar 侧边栏、BrandMark 品牌标识、PageHeader 页头、StatCard 指标卡、
+                 EmptyState 空态、OrderStatusTag 订单状态、CustomerSelect 客户选择、ChartPanel ECharts 容器
   constants/     业务枚举、路线图、角色名称
-  layouts/       主布局（含消息铃铛与轮询）
+  layouts/       MainLayout 主布局（含消息铃铛与轮询）
   router/        路由、权限元数据、登录守卫
   stores/        Pinia 认证会话
   styles/        设计变量和全局样式
   utils/         OAuth、JWT、金额、格式化、错误处理
-  views/         页面（production/ 设备与排产，messages/ 消息中心）
+  views/         页面（按业务域分目录）
+                 customers/ 客户，finance/ 财务与合同，orders/ 订单，production/ 设备与排产，
+                 warehouse/ 仓储，approval/ 审批，ai/ AI 助手，messages/ 消息，system/ 系统，
+                 roadmap/ 业务模块路线图
 ```
+
+## 9. 页面截图
+
+> 截图目录约定：`docs/screenshots/`，文件名 `<模块>-<页面>.png`。本仓库当前未提交截图二进制文件，下表给出「页面 — 路由 — 截图文件 — 截图说明」的完整对照；验收截图由运维在验收机生成后放入该目录，取消下方注释即可在 GitHub 上直接显示。
+
+<!-- 示例：登录页 -->
+<!-- <img src="docs/screenshots/web-login.png" alt="PC Web 登录页" width="900"> -->
+
+| 页面 | 路由 | 截图文件 | 截图说明 |
+| --- | --- | --- | --- |
+| 登录页 | `/login` | `docs/screenshots/web-login.png` | 统一认证入口，跳转认证中心完成授权码 + PKCE 登录 |
+| 工作台 | `/dashboard` | `docs/screenshots/web-dashboard.png` | 顶部经营指标区：KPI 卡片、近 12 个月订单/收款趋势、本月订单状态环图、风险与待办、「待数据源」条；右上角「指标口径」弹出全量指标定义 |
+| 经营大屏 | `/cockpit` | `docs/screenshots/web-cockpit.png` | 16:9 暗色驾驶舱：标题栏（数据范围/最后同步时间/时钟）、6 个 KPI 卡、订单与收款趋势、设备状态环图、本月订单状态环图、工厂订单对比、风险预警列表；支持全屏与 5 分钟自动刷新 |
+| 客户列表 / 新建客户 | `/customers`、`/customers/create` | `docs/screenshots/web-customers.png` | 客户主数据列表与新建表单（来源、归属业务员必填，信用额度由后端收紧） |
+| 客户 360 | `/customers/:id` | `docs/screenshots/web-customer-360.png` | 客户档案、合同、应收、信用与订单一体视图，含「申请调整信用额度」入口 |
+| 信用看板 | `/finance/credit` | `docs/screenshots/web-credit.png` | 逐客户授信、已用、可用额度、最大逾期与风险标签（只读） |
+| 应收账款 | `/finance/receivables` | `docs/screenshots/web-receivables.png` | 账龄与逾期、筛选汇总（应收总额/未收余额/逾期金额）与登记应收 |
+| 收款核销 | `/finance/receipts` | `docs/screenshots/web-receipts.png` | 先登记到账再按未结应收分配，未核销余额作为预收待认领 |
+| 手工开票 | `/finance/invoices` | `docs/screenshots/web-invoices.png` | 票面信息登记与「已登记 → 已寄出 → 客户签收」跟踪 |
+| 客户对账 | `/finance/statements` | `docs/screenshots/web-statements.png` | 按客户与期间生成快照：期初、本期应收/收款/开票、期末 |
+| 合同管理 | `/finance/contracts` | `docs/screenshots/web-contracts.png` | 合同录入与「正式录入」状态流转，订单引用的前提 |
+| 费用报销 / 借款还款 | `/finance/expenses`、`/finance/loans` | `docs/screenshots/web-expenses.png` | 单据提交与审批状态；借款、还款登记 |
+| 订单列表 / 新建订单 | `/orders`、`/orders/create` | `docs/screenshots/web-orders.png` | 列表筛选与新建订单（客户、合同、工厂、材料、工艺、长度） |
+| 订单详情 | `/orders/:orderNo` | `docs/screenshots/web-order-detail.png` | 订单基本信息 + 生产工单区块（设备、队列位置、计划/实际时间、材料成本按权限展示） |
+| 设备台账 | `/equipment` | `docs/screenshots/web-equipment.png` | 设备档案、能力与位置、设备状态与状态日志 |
+| 排产队列 | `/production/schedule` | `docs/screenshots/web-schedule.png` | 按设备分组展示生产中与等待队列，支持建工单、开工、完成、取消 |
+| 维护工单 | `/production/maintenance` | `docs/screenshots/web-maintenance.png` | 发起维护、开始维护、完成登记成本与停机时长 |
+| 点检保养 | `/production/inspections` | `docs/screenshots/web-inspections.png` | 日/周/月点检登记，异常可一键生成「点检整改」工单 |
+| 插队申请 | `/production/jump-requests` | `docs/screenshots/web-jump-requests.png` | 只读插队记录，审批动作在审批中心完成 |
+| 设备数据上报 | `/production/device-reports` | `docs/screenshots/web-device-reports.png` | MQTT/CoAP/HTTP 上报数据、订单图片一条一单与未匹配暂存情况 |
+| 仓储管理 | `/warehouse` | `docs/screenshots/web-warehouse.png` | 仓库档案、物料档案、库存台账三个页签 |
+| 采购入库 / 跨厂调拨 / 工单领料 | `/warehouse/purchase-receipts`、`/warehouse/stock-transfers`、`/warehouse/material-issues` | `docs/screenshots/web-warehouse-docs.png` | 草稿→确认收货、先出库后入库、建单不扣库存确认发料才扣减 |
+| 审批中心 | `/approval` | `docs/screenshots/web-approval.png` | 「我的待办」「我的申请」两个页签，同意/驳回/撤销 |
+| 审批流程与档位 | `/approval/definitions` | `docs/screenshots/web-approval-definitions.png` | 业务类型金额档位配置（下限含、上限不含，财务维护） |
+| AI 助手 | `/assistant` | `docs/screenshots/web-assistant.png` | 只读问答与工具调用过程，审计写入 `ai_chat_log` |
+| 消息中心 | `/messages` | `docs/screenshots/web-messages.png` | 全部/仅未读、标记已读、跳转关联订单 |
+| 用户 / 工厂 / 权限 / 个人中心 | `/system/users`、`/system/factories`、`/system/permissions`、`/profile` | `docs/screenshots/web-system.png` | 系统与权限管理 |
