@@ -112,6 +112,11 @@ Vite 只暴露以 `VITE_` 开头的变量。开发环境读取 `.env.development
 
 `pc-web` 是公开客户端，不保存 `client_secret`。当前 Spring Authorization Server 1.5 默认不向公共客户端签发 refresh token，所以 access token 过期后需要重新登录。生产环境如需无感续期，建议增加 BFF，用 HttpOnly Cookie 保存会话和后端刷新令牌，不要把长期令牌放进浏览器存储。
 
+PKCE 的 SHA-256 计算优先使用 `crypto.subtle`。该接口只在 HTTPS 或 localhost
+安全上下文可用；通过 `http://内网IP` 访问时会自动回退到内置的纯 JS 实现，
+避免登录按钮报 `Cannot read properties of undefined (reading 'digest')`。
+生产环境仍应启用 HTTPS。
+
 ## 4. 页面与权限
 
 | 页面 | 路由 | 权限 |
